@@ -1,0 +1,24 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /edu
+
+spring:
+
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/wise_database?characterEncoding=UTF-8
+    username: root
+    password: 123qwe
+    
+  jpa:
+    database: mysql
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    
+  mvc:
+    view:
+      prefix: /WEB-INF/jsp/
+      suffix: .jsp  web:    resources:      static-locations: classpath:static/
+
